@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -8,6 +9,9 @@ public class Main {
         System.out.println(risultato);
         String Concatenata=concatena("Epicode",4);
         System.out.println(Concatenata);
+        String[] arr={"taylor","short","n","sweet","coicidence"};
+        String[] newarr=inserisci(arr,"Carpenter");
+        System.out.println(Arrays.toString(newarr));
 
 
 
@@ -42,7 +46,17 @@ public class Main {
     public static  int moltiplicazione(int a, int b){
     return  a*b;}
     public static String concatena (String frase, int c){return frase+c;}
-
+    public static String[] inserisci (String[] arr, String mid){
+        String[] newarr= new String[6];
+        newarr[0]=arr[0];
+        newarr[1]=arr[1];
+        newarr[2]=mid;
+        newarr[3]=arr[3];
+        newarr[4]=arr[2];
+        newarr[5]=arr[4];
+        return newarr;
+    }
+//esercizio 3
     public static int perimetrorett(int base, int altezza){return base+base+altezza+altezza;}
     public static int numInt (int numero) {
         if (numero % 2 == 0) {
